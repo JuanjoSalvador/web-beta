@@ -21,7 +21,7 @@
           <br />
           <p class="subtitle is-3">
               Soy <strong>desarrollador backend</strong>, 
-              trabajo con <strong>Python</strong> y <strong>Java</strong>.
+              con conocimientos de <strong>Python</strong> y <strong>Java</strong>.
           </p>
 
           <p class="subtitle is-4">

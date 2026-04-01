@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 definePageMeta({
-  name_es: 'Experiencia',
+  name_es: 'Sobre mi',
   pageOrder: 2
 })
 </script>
@@ -8,20 +8,27 @@ definePageMeta({
 <template>
   <section class="section">
     <h3 class="title is-3">
-      Experiencia
+      Sobre mi
     </h3>
     <div class="content">
-      <p class="description is-justified">
+      <p>
         Empecé mi carrera como desarrollador de software en el año 2016, al terminar mis estudios en 
         <strong>Técnico Superior en Desarrollo de Aplicaciones Web</strong> Desde entonces he trabajado
         en diversas empresas y proyectos, con diferentes tecnologías y lenguajes, como <strong>Java</strong>, 
-        <strong>Python</strong>, y <strong>JavaScript</strong>. Me considero un desarrollador versátil y
-        con capacidad de adaptación.
+        <strong>Python</strong>, y <strong>JavaScript</strong>.
+      </p>
+      <p>
+        Dada mi curiosidad, y el considerarme un <em>maestro de nada, aprendiz de todo</em>, he pasado por diversos campos
+        en mi vida laboral, como desarrollo frontend, con tecnologías como <strong>Angular</strong> o <strong>Vue</strong>,
+        desarrollo backend con <strong>Django</strong>, <strong>Flask</strong>, o <strong>Spring</strong>. Alternativamente,
+        tengo a mis espaldas dos cursos de especialización de FP, en <strong>ciberseguridad</strong> y en 
+        <strong>desarrollo de videojuegos y RV</strong>, aunque lamentablemente no he tenido oportunidad de ejercer en dichos
+        campos y solo han servido para saciar una necesidad de conocimiento.
       </p>
     </div>
 
     <h3 class="title is-4">
-      Cronología
+      Experiencia laboral reciente
     </h3>
     
     <ExperienceCard
@@ -30,7 +37,7 @@ definePageMeta({
       end-month="Actualmente" 
       end-year=""
       company-name="iArchiva SL"
-      description="Hacia cosas con Java"
+      description="Hago cosas con Java"
       :tags="['Java', 'Spring']"
     />
 
@@ -41,7 +48,7 @@ definePageMeta({
       end-year="2024"
       company-name="Deep Kernel Labs"
       description="Hacia cosas con Python"
-      :tags="['Python']"
+      :tags="['Python', 'Docker', 'Pandas']"
     />
 
     <ExperienceCard
@@ -54,7 +61,7 @@ definePageMeta({
       :tags="['Python', 'Django', 'Docker', 'Pandas']"
     />
 
-    <ExperienceCard
+    <!--ExperienceCard
       start-month="Junio" 
       start-year="2020" 
       end-month="Enero" 
@@ -92,6 +99,6 @@ definePageMeta({
       company-name="Seyte SL"
       description="Hacía aplicaciones móviles con Ionic"
       :tags="['Ionic', 'Angular']"
-    />
+    /> -->
   </section>
 </template>

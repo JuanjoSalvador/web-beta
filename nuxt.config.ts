@@ -6,10 +6,10 @@ export default defineNuxtConfig({
     '@/assets/style/variables.css',
     '@/assets/style/commons.css'
   ],
-  app: {
-    pageTransition: { name: 'slide', mode: 'out-in' },
-    layoutTransition: { name: 'slide', mode: 'out-in' },
-  },
+  // app: {
+  //   pageTransition: { name: 'slide', mode: 'out-in' },
+  //   layoutTransition: { name: 'roll-up', mode: 'out-in' },
+  // },
   modules: [
     '@nuxt/a11y',
     '@nuxt/eslint',
