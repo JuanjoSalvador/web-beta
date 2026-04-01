@@ -1,6 +1,7 @@
 <script lang="ts" setup>
   definePageMeta({
-    layout: 'hero'
+    layout: 'hero',
+    pageOrder: 1
   })
 </script>
 
@@ -9,7 +10,7 @@
     <div class="columns">      
       <div class="column">
         <figure class="image">
-          <img src="@/assets/images/pfp.jpg" class="is-rounded">
+          <img src="@/assets/images/pfp.jpg" class="is-rounded" alt="Fotografía en blanco y negro del autor">
         </figure>
       </div>  
       
@@ -38,8 +39,9 @@
 </template>
 
 <style scoped>
-.introduction {
-  padding-top: 10rem;
-  padding-left: 10rem;
+@media screen and (min-width: 768px) {
+  .introduction {
+    padding-top: 10rem;
+  }
 }
 </style>

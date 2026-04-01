@@ -1,8 +1,12 @@
 <script lang="ts" setup>
+definePageMeta({
+  name_es: 'Experiencia',
+  pageOrder: 2
+})
 </script>
 
 <template>
-  <div>
+  <section class="section">
     <h3 class="title is-3">
       Experiencia
     </h3>
@@ -89,5 +93,5 @@
       description="Hacía aplicaciones móviles con Ionic"
       :tags="['Ionic', 'Angular']"
     />
-  </div>
+  </section>
 </template>

@@ -1,5 +1,11 @@
+<script lang="ts" setup>
+definePageMeta({
+  name_es: 'Proyectos',
+  pageOrder: 3
+})
+</script>
 <template>
-    <div>
+    <section class="section">
         <h4 class="subtitle is-3 is-light">Proyectos personales</h4>
 
         <div class="content">
@@ -80,13 +86,5 @@
             <p class="description is-justified">Visual Studio Code Genesis Development Extension. Minor code contributions and Windows testing.</p>
             </div>
         </div>
-    </div>
+    </section>
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style>
-
-</style>

@@ -1,11 +1,6 @@
 <template>
-  <div>
-    <div class="spacer"></div>
-    <div class="columns">
-      <div class="column is-half is-offset-one-quarter">
-        <slot />
-      </div>
-    </div>
+  <div class="column is-half is-offset-one-quarter">
+      <slot />
   </div>
 </template>
 
@@ -14,7 +9,5 @@
 </script>
 
 <style>
-.spacer {
-  min-height: 4rem;
-}
+
 </style>

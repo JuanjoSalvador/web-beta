@@ -54,7 +54,7 @@ const props = defineProps({
 .experience-card {
   border-radius: 1rem;
   padding: 0.1rem;
-  max-height: 8.5rem;
+  max-height: 9.5rem;
 }
 
 .experience-card > .title {
