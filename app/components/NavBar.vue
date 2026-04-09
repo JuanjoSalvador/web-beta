@@ -41,9 +41,6 @@ const closeMenu = () => {
       </div>
   
       <div class="navbar-end">
-          <a class="navbar-item" data-theme-toggle="" aria-label="Change to light theme">
-            🌙
-          </a>
       </div>
     </div>
   </nav>

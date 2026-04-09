@@ -5,51 +5,64 @@ definePageMeta({
   name_es: 'Sobre mi',
   pageOrder: 2
 })
+
+const view = ref('background')
 </script>
 
 <template>
   <section class="section">
-    <h1 class="title is-3">
-      Sobre mi
-    </h1>
-
-    <div class="content">
-      <MDC :value="aboutRaw" />
+    <div class="tabs is-centered is-toggle is-toggle-rounded">
+      <ul>
+        <li :class="{ 'is-active': view == 'background' }">
+          <a @click="view = 'background'">
+            Trasfondo
+          </a>
+        </li>
+        <li :class="{ 'is-active': view == 'resume' }">
+          <a @click="view = 'resume'">
+            Experiencia
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <h2 class="title is-4">
-      Experiencia laboral reciente
-    </h2>
-    
-    <ExperienceCard
-      start-month="Marzo" 
-      start-year="2025" 
-      end-month="Actualmente" 
-      end-year=""
-      company-name="iArchiva SL"
-      description="Hago cosas con Java"
-      :tags="['Java', 'Spring']"
-    />
+    <div v-if="view === 'background'">
+      <div class="content" id="background">
+        <MDC :value="aboutRaw" />
+      </div>
+    </div>
+  
+    <div v-else-if="view === 'resume'">     
+      <ExperienceCard
+        start-month="Marzo" 
+        start-year="2025" 
+        end-month="Actualmente" 
+        end-year=""
+        company-name="iArchiva SL"
+        description="Hago cosas con Java"
+        :tags="['Java', 'Spring']"
+      />
 
-    <ExperienceCard
-      start-month="Febrero" 
-      start-year="2024" 
-      end-month="Septiembre" 
-      end-year="2024"
-      company-name="Deep Kernel Labs"
-      description="Hacia cosas con Python"
-      :tags="['Python', 'Docker', 'Pandas']"
-    />
+      <ExperienceCard
+        start-month="Febrero" 
+        start-year="2024" 
+        end-month="Septiembre" 
+        end-year="2024"
+        company-name="Deep Kernel Labs"
+        description="Hacia cosas con Python"
+        :tags="['Python', 'Docker', 'Pandas']"
+      />
 
-    <ExperienceCard
-      start-month="Marzo" 
-      start-year="2021" 
-      end-month="Septiembre" 
-      end-year="2023"
-      company-name="Cathedral Software"
-      description="Hacia cosas con Django"
-      :tags="['Python', 'Django', 'Docker', 'Pandas']"
-    />
+      <ExperienceCard
+        start-month="Marzo" 
+        start-year="2021" 
+        end-month="Septiembre" 
+        end-year="2023"
+        company-name="Cathedral Software"
+        description="Hacia cosas con Django"
+        :tags="['Python', 'Django', 'Docker', 'Pandas']"
+      />
+    </div>
 
     <!--ExperienceCard
       start-month="Junio" 
@@ -92,3 +105,9 @@ definePageMeta({
     /> -->
   </section>
 </template>
+
+<style>
+#background p {
+  font-size: x-large;
+}
+</style>
