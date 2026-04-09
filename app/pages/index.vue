@@ -8,13 +8,13 @@
 <template>
   <div>
     <div class="columns">      
-      <div class="column">
+      <div class="column" role="banner">
         <figure class="image">
-          <img src="@/assets/images/pfp.jpg" class="is-rounded" alt="Fotografía en blanco y negro del autor">
+          <img src="@/assets/images/pfp.avif" fetchpriority="high" class="is-rounded" alt="Fotografía en blanco y negro del autor">
         </figure>
       </div>  
       
-      <div class="column">
+      <div class="column" role="main">
         <div class="introduction">
           <p class="subtitle">¡Hola! Soy</p>
           <h1 class="title is-2">Juanjo Salvador</h1>
@@ -28,9 +28,9 @@
             Aunque también tengo experiencia en <strong>frontend</strong>, <strong>DevOps</strong> y <strong>sistemas Linux</strong>.
           </p>
           <div class="social-buttons is-centered">
-            <SocialButton size="5" platform="github" username="JuanjoSalvador" />
-            <SocialButton size="5" platform="linkedin" username="jj-salvador" />
-            <SocialButton size="5" platform="mastodon" username="jsalvador" />
+            <SocialButton size="5" platform="github" username="JuanjoSalvador" alt="Enlace a mi perfil en GitHub" />
+            <SocialButton size="5" platform="linkedin" username="jj-salvador" alt="Enlace a mi perfil en LinkedIn" />
+            <SocialButton size="5" platform="mastodon" username="jsalvador" alt="Enlace a mi perfil en Mastodon" />
           </div>
         </div>
       </div>

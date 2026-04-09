@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink class="icon-link" :href="socialUrl" target="_blank">
+    <NuxtLink class="icon-link" :to="socialUrl" target="_blank" :aria-label="alt">
       <Icon :name="`fa6-brands:${platform}`" :size="`${size}rem`" />
     </NuxtLink>
 </template>
@@ -18,6 +18,10 @@ const props = defineProps({
     }
   },
   username: {
+    type: String,
+    required: true
+  },
+  alt: {
     type: String,
     required: true
   }

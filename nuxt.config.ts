@@ -1,20 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  vite: {
+    optimizeDeps: {
+      include: [
+        'xml-js',
+        'remark-gfm',
+        'remark-mdc',
+        'remark-rehype',
+        'rehype-raw',
+        'unified'
+      ]
+    }
+  },
   devtools: { enabled: true },
-  css: [
-    '@/assets/style/variables.css',
-    '@/assets/style/commons.css'
-  ],
-  // app: {
-  //   pageTransition: { name: 'slide', mode: 'out-in' },
-  //   layoutTransition: { name: 'roll-up', mode: 'out-in' },
-  // },
   modules: [
+    '@nuxtjs/critters',
     '@nuxt/a11y',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/icon',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxt/content'
   ]
 })
