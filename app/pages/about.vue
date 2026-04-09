@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import aboutRaw from '~/content/about.md?raw'
+
 definePageMeta({
   name_es: 'Sobre mi',
   pageOrder: 2
@@ -7,29 +9,17 @@ definePageMeta({
 
 <template>
   <section class="section">
-    <h3 class="title is-3">
+    <h1 class="title is-3">
       Sobre mi
-    </h3>
+    </h1>
+
     <div class="content">
-      <p>
-        Empecé mi carrera como desarrollador de software en el año 2016, al terminar mis estudios en 
-        <strong>Técnico Superior en Desarrollo de Aplicaciones Web</strong> Desde entonces he trabajado
-        en diversas empresas y proyectos, con diferentes tecnologías y lenguajes, como <strong>Java</strong>, 
-        <strong>Python</strong>, y <strong>JavaScript</strong>.
-      </p>
-      <p>
-        Dada mi curiosidad, y el considerarme un <em>maestro de nada, aprendiz de todo</em>, he pasado por diversos campos
-        en mi vida laboral, como desarrollo frontend, con tecnologías como <strong>Angular</strong> o <strong>Vue</strong>,
-        desarrollo backend con <strong>Django</strong>, <strong>Flask</strong>, o <strong>Spring</strong>. Alternativamente,
-        tengo a mis espaldas dos cursos de especialización de FP, en <strong>ciberseguridad</strong> y en 
-        <strong>desarrollo de videojuegos y RV</strong>, aunque lamentablemente no he tenido oportunidad de ejercer en dichos
-        campos y solo han servido para saciar una necesidad de conocimiento.
-      </p>
+      <MDC :value="aboutRaw" />
     </div>
 
-    <h3 class="title is-4">
+    <h2 class="title is-4">
       Experiencia laboral reciente
-    </h3>
+    </h2>
     
     <ExperienceCard
       start-month="Marzo" 

@@ -1,0 +1,10 @@
+---
+title: "Experiencia"
+description: "Soy desarrollador web"
+---
+
+Empecé mi carrera como desarrollador de software en el año 2016, al terminar mis estudios en **Técnico Superior en Desarrollo de Aplicaciones Web** Desde entonces he trabajado en diversas empresas y proyectos, con diferentes tecnologías y lenguajes, como **Java**, **Python**, y **JavaScript**.
+
+Dada mi curiosidad, y el considerarme un <em>maestro de nada, aprendiz de todo</em>, he pasado por diversos campos en mi vida laboral, como desarrollo frontend, con tecnologías como **Angular** o **Vue**, desarrollo backend con **Django**, **Flask**, o **Spring**. 
+
+Alternativamente, tengo a mis espaldas dos cursos de especialización de FP, en **ciberseguridad** y en **desarrollo de videojuegos y RV**, aunque lamentablemente no he tenido oportunidad de ejercer en dichos campos y solo han servido para saciar una necesidad de conocimiento.
