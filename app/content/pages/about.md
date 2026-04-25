@@ -2,4 +2,4 @@ Empecé mi carrera como desarrollador de software en el año 2016, al terminar m
 
 Dada mi curiosidad, y el considerarme un <em>maestro de nada, aprendiz de todo</em>, he pasado por diversos campos en mi vida laboral, como desarrollo frontend, con tecnologías como **Angular** o **Vue**, desarrollo backend con **Django**, **Flask**, o **Spring**. 
 
-Alternativamente, tengo a mis espaldas dos cursos de especialización de FP, en **ciberseguridad** y en **desarrollo de videojuegos y RV**, aunque lamentablemente no he tenido oportunidad de ejercer en dichos campos y solo han servido para saciar una necesidad de conocimiento.
+ espaldas dos cursos de especialización de FP, en **ciberseguridad** y en **desarrollo de videojuegos y RV**, aunque lamentablemente no he tenido oportunidad de ejercer en dichos campos y solo han servido para saciar una necesidad de conocimiento.

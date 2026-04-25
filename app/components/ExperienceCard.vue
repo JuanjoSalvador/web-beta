@@ -72,7 +72,7 @@ const props = defineProps({
 }
 
 .tag:hover {
-  background-color: var(--primary-color);
+  background-color: var(----main);
 }
 
 hr {

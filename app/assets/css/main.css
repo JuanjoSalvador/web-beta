@@ -1,0 +1,18 @@
+  :root {
+    --bg:        #0d0f0e;
+    --surface:   #141716;
+    --border:    #1e2320;
+    --main:      #7aff8c;
+    --main-dim:  #3a7a44;
+    --amber:     #ffcc55;
+    --text:      #c8d4c9;
+    --muted:     #5a6b5c;
+    --white:     #eef2ee;
+  }
+
+  html, body {
+    background-color: var(--bg) !important;
+    color: var(--text) !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    min-height: 100vh;
+  }
