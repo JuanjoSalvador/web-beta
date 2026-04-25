@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="hero is-fullheight">
+    <section class="hero is-fullheight-with-navbar">
       <div class="hero-body">
-          <div class="container main">
-            <slot />
-          </div>
+        <div class="container">
+          <slot />
+        </div>
       </div>
     </section>
   </div>

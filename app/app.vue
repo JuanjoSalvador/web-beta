@@ -24,9 +24,15 @@ useHead({
 </template>
 
 <style>
-  :root {
-    --primary-color: #3443eb;
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 999;
+    opacity: 0.4;
   }
+
 
   p.is-justified {
     text-align: justify;
@@ -34,6 +40,7 @@ useHead({
 
   p {
       font-size: large;
+      margin-bottom: 1.25em;
   }
 
   .slide-left-enter-from {
