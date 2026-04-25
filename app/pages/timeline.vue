@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import aboutRaw from '~/content/about.md?raw'
-
 definePageMeta({
   name_es: 'Trayectoria profesional',
   layout: 'default',
